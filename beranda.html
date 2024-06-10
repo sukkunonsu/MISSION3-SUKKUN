@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="./style/stylehome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div class="container">
+      <!-- Navbar -->
+      <div class="navbar-container">
+        <div class="navbar-left">
+          <div class="arrow-left">
+            <img src="./images/arrowsvg.svg" alt="" class="arrow" />
+          </div>
+          <div class="logo">
+            <a href="#">
+              <img src="./images/logo.png" alt="Logo" class="mymusic-logo" />
+            </a>
+          </div>
+          <div class="hamburger">
+            <img src="./images/hamburger.svg" alt="" class="hamburger" />
+          </div>
+        </div>
+        <div class="navbar-right">
+          <div class="navbar-search">
+            <form action="./search" method="GET">
+              <img src="./images/search-icon.svg" alt="Search Icon" class="search-icon"/>
+              <input type="text" name="search" placeholder="Search Song, Album, Singer..." id="search"/>
+            </form>
+          </div>
+          <div class="profile">
+            <div class="button-navbar">
+              <div class="p-notification">
+                <a href="#">
+                    <img src="./images/notification.svg" alt="notification" class="notification"/></a>
+                <a href="#">
+                    <div class="notification-number"><p>12</p></div></a>
+              </div>
+              <div class="profile-picture">
+                <a href="#">
+                    <img src="images/Avatar.png" alt="Avatar Profile"/>Hi, Sukkun</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar -->
+
+      <!-- Sidebar -->
+      <div class="sidebar-container">
+        <div class="menu">
+          <ul>
+            <li>
+                <a href="#">Menu</a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/sidebar/home-sidebar.svg" alt=""/>Home</a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/sidebar/discover-sidebar.svg" alt=""/>Discover</a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/sidebar/artists-sidebar.svg" alt=""/>Artist</a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/sidebar/songs-sidebar.svg" alt=""/>Song</a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/sidebar/albums-sidebar.svg" alt=""/>Album</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mymusic">
+          <ul>
+            <li>
+                <a href="#">My Music</a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/sidebar/myfaforites-sidebar.svg" alt=""/>My Favorites</a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/sidebar/recently-played-sidebar.svg" alt=""/>Recently Played</a>
+            </li>
+          </ul>
+        </div>
+        <div class="myplaylist">
+          <div class="card-my-p">
+            <div class="list-menu-sidebar">My Playlist <button>+</button></div>
+            <div class="list-button-sidebar">
+              <button>Album</button> <button>Playlist</button>
+            </div>
+            <div class="card-sidebar">
+              <a href="#" class="card-sidebar-link">
+                <img src="./images/sidebar/Name=Nadin_Amizah_-_Selamat_Ulang_Tahun.png"
+                  alt="" class="cover-sidebar-song"/>
+                <div class="artist-sidebar">
+                  <h4>Selamat Ulang Tahun</h4>
+                  <h6>Nadin Amizah</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card-sidebar">
+              <a href="#" class="card-sidebar-link">
+                <img src="./images/sidebar/Name=Midnights_-_Taylor_Swift.png"
+                  alt="" class="cover-sidebar-song"/>
+                <div class="artist-sidebar">
+                  <h4>Midnight</h4>
+                  <h6>Taylor Swift</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card-sidebar">
+              <a href="#" class="card-sidebar-link">
+                <img src="./images/sidebar/Name=Taylor_Swift_-_Red.png"
+                  alt="" class="cover-sidebar-song"/>
+                <div class="artist-sidebar">
+                  <h4>Red</h4>
+                  <h6>Taylor Swift</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card-sidebar">
+              <a href="#" class="card-sidebar-link">
+                <div class="playlist-card-sidebar">
+                  <img src="./images/sidebar/Name=Taylor_Swift_-_1989.png"
+                    alt="" class="cover-sidebar"/>
+                  <img src="./images/sidebar/Name=Taylor_Swift_-_Evermore.png"
+                    alt="" class="cover-sidebar"/>
+                  <img src="./images/sidebar/Name=Taylor_Swift_-_Speak_Now_cover.png"
+                    alt="" class="cover-sidebar"/>
+                  <img src="./images/sidebar/Name=Taylor_Swift_-_Reputation.png"
+                    alt="" class="cover-sidebar"/>
+                </div>
+                <div class="artist-sidebar">
+                  <h4>Taylor's Swift Playlist Song</h4>
+                  <h6>Taylor Swift</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- main web -->
+      <div class="main-container">
+        <div class="mp-playlists">
+          <div class="title-mp-p">
+            <h4><a href="#">Most Played Playlists</a></h4>
+            <h6><a href="#">Show All</a></h6>
+          </div>
+          <div class="card-container-mp-p">
+            <div class="card-mp-p">
+                <img src="images/main/Name=Taylor_Swift_-_1989.png" alt="" class="image-mp-p"/>
+                <img src="images/main/Name=Taylor_Swift_-_Evermore.png" alt="" class="image-mp-p"/>
+                <img src="images/main/Name=Taylor_Swift_-_Fearless.png" alt="" class="image-mp-p" />
+                <img src="images/main/Name=Taylor_Swift_-_Red.png" alt="" class="image-mp-p" />
+                <div class="text-card-mp-p">
+                    <h3>Vibes of the...</h3>
+                    <h6>jenniekim</h6>
+                </div>
+            </div>
+            <div class="card-mp-p">
+                <img src="images/main/Name=Nadin_Amizah_-_Selamat_Ulang_Tahun.png" alt="" class="image-mp-p"/>
+                <img src="images/main/Name=Kunto_Aji_-_Mantra_Mantra.png" alt="" class="image-mp-p"/>
+                <img src="images/main/Name=Jennie.png" alt="" class="image-mp-p"/>
+                <img src="images/main/Name=Jisoo.png" alt="" class="image-mp-p"/>
+                <div class="text-card-mp-p">
+                    <h3>Chill & Relax</h3>
+                    <h6>musicclover</h6>
+                 </div>
+            </div>
+            <div class="card-mp-p">
+                <img src="images/main/Name=Black_Pink_-_Square_Up_artwork.png" alt="" class="image-mp-p"/>
+                <img src="images/main/Name=Blackpink.png" alt="" class="image-mp-p"/>
+                <img src="images/main/Name=Blackpink_-_Kill_This_Love.png" alt="" class="image-mp-p"/>
+                <img src="images/main/Name=Born_Pink_Digital.png" alt="" class="image-mp-p" />
+                <div class="text-card-mp-p">
+                    <h3>Upbeat</h3>
+                    <h6>melodymaster</h6>
+                </div>
+            </div>
+            <div class="card-mp-p">
+                <img src="images/main/Name=BTS.png" alt="" class="image-mp-p" />
+                <img src="images/main/Name=BTS_-_Be_Cover.png" alt="" class="image-mp-p"/>
+                <img src="images/main/Name=BTS_-_Map_of_the_Soul_7.png" alt="" class="image-mp-p" />
+                <img src="images/main/Name=Fifty Fifty.png" alt="" class="image-mp-p"/>
+                <div class="text-card-mp-p">
+                    <h3>Throwback Jams</h3>
+                    <h6>harmonizeme</h6>
+                </div>
+            </div>
+            <div class="card-mp-p">
+                <img src="images/main/Name=Twice.png" alt="" class="image-mp-p"/>
+                <img src="images/main/Name=Jennie.png" alt="" class="image-mp-p"/>
+                <img src="images/main/Name=BTS.png" alt="" class="image-mp-p" />
+                <img src="images/main/Name=Lisa.png" alt="" class="image-mp-p"/>
+                <div class="text-card-mp-p">
+                    <h3>Korea's Faforites</h3>
+                    <h6>blackpinkfans</h6>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="mp-albums">
+          <div class="title-mp-p">
+            <h4><a href="#">Most Played Albums</a></h4>
+            <h6><a href="#">Show All</a></h6>
+          </div>
+          <div class="card-container-mp-p">
+            <div class="card-mp-p">
+              <img src="images/main/Name=Midnights_-_Taylor_Swift.png" alt="" class="image-mp-p"/>
+              <div class="text-card-mp-p">
+                <h3>Midnight</h3>
+                <h6>Taylor Swift</h6>
+              </div>
+            </div>
+            <div class="card-mp-p">
+              <img src="images/main/Name=BTS_-_Be_Cover.png" alt="" class="image-mp-p"/>
+              <div class="text-card-mp-p">
+                <h3>Be</h3>
+                <h6>BTS</h6>
+              </div>
+            </div>
+            <div class="card-mp-p">
+              <img src="images/main/Name=Taylor_Swift_-_Red.png" alt="" class="image-mp-p"/>
+              <div class="text-card-mp-p">
+                <h3>Red</h3>
+                <h6>Taylor Swift</h6>
+              </div>
+            </div>
+            <div class="card-mp-p">
+              <img src="images/main/Name=NewJeans_OMG_cover.png" alt="" class="image-mp-p"/>
+              <div class="text-card-mp-p">
+                <h3>OMG</h3>
+                <h6>New Jeans</h6>
+              </div>
+            </div>
+            <div class="card-mp-p">
+              <img src="images/main/Name=Nadin_Amizah_-_Selamat_Ulang_Tahun.png" alt="" class="image-mp-p"/>
+              <div class="text-card-mp-p">
+                <h3>Selamat Ulang Tahun</h3>
+                <h6>Nadin Amizah</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mp-songs">
+          <div class="title-mp-p">
+            <h4><a href="#">Most Played Songs</a></h4>
+            <h6><a href="#">Show All</a></h6>
+          </div>
+          <div class="card-container-mp-s">
+            <div class="card-mp-s">
+              <div class="frame-card-mp-s">
+                <img src="images/main/Name=NewJeans_OMG_cover.png" alt="" class="image-mp-s"/>
+                <div class="text-card-mp-s">
+                  <h4>OMG</h4>
+                  <h6>NewJeans</h6>
+                </div>
+              </div>
+              <div class="frame-card-mp-s">
+                <img src="images/main/Name=Taylor_Swift_-_Reputation.png" alt="" class="image-mp-s"/>
+                <div class="text-card-mp-s">
+                  <h4>DDU-DU-DDU-DU</h4>
+                  <h6>Taylor Swift</h6>
+                </div>
+              </div>
+              <div class="frame-card-mp-s">
+                <img src="images/main/Name=NewJeans_OMG_cover.png" alt="" class="image-mp-s"/>
+                <div class="text-card-mp-s">
+                  <h4>Zero</h4>
+                  <h6>NewJeans</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card-mp-s">
+              <div class="frame-card-mp-s">
+                <img src="images/main/Name=BTS_-_Be_Cover.png" alt="" class="image-mp-s"/>
+                <div class="text-card-mp-s">
+                  <h4>Be</h4>
+                  <h6>BTS</h6>
+                </div>
+              </div>
+              <div class="frame-card-mp-s">
+                <img src="images/main/Name=Kunto_Aji_-_Mantra_Mantra.png" alt="" class="image-mp-s"/>
+                <div class="text-card-mp-s">
+                  <h4>Mantra</h4>
+                  <h6>Kunto Aju</h6>
+                </div>
+              </div>
+              <div class="frame-card-mp-s">
+                <img src="images/main/Name=Nadin_Amizah_-_Selamat_Ulang_Tahun.png" alt="" class="image-mp-s"/>
+                <div class="text-card-mp-s">
+                  <h4>Selamat Ulang Tahun</h4>
+                  <h6>Nadin Amizah</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card-mp-s">
+              <div class="frame-card-mp-s">
+                <img src="images/main/Name=Born_Pink_Digital.png" alt="" class="image-mp-s"/>
+                <div class="text-card-mp-s">
+                  <h4>Born Pink</h4>
+                  <h6>BLACKPINK</h6>
+                </div>
+              </div>
+              <div class="frame-card-mp-s">
+                <img src="images/main/Name=BTS_-_Map_of_the_Soul_7.png" alt="" class="image-mp-s"/>
+                <div class="text-card-mp-s">
+                  <h4>Maps Of Soul</h4>
+                  <h6>BTS</h6>
+                </div>
+              </div>
+              <div class="frame-card-mp-s">
+                <img src="images/main/Name=Tulus_-_Manusia_(Album_Cover).png" alt="" class="image-mp-s"/>
+                <div class="text-card-mp-s">
+                  <h4>Manusia</h4>
+                  <h6>Tulus</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fp-artist">
+          <div class="title-mp-p">
+            <h4><a href="#">Most Played Albums</a></h4>
+            <h6><a href="#">Show All</a></h6>
+          </div>
+          <div class="card-container-mp-p">
+            <div class="card-mp-p">
+              <div class="frame-card-mp-p">
+                <img src="images/main/Name=Lisa.png" alt="" class="image-mp-p"/>
+                <div class="text-card-mp-p">
+                  <h3>Lisa</h3>
+                  <h6>1M Subscriber</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card-mp-p">
+              <img src="images/main/Name=Fifty Fifty.png" alt="" class="image-mp-p"/>
+              <div class="text-card-mp-p">
+                <h3>Fifty Fifty</h3>
+                <h6>1M Subscriber</h6>
+              </div>
+            </div>
+            <div class="card-mp-p">
+              <img src="images/main/Name=Blackpink.png" alt="" class="image-mp-p"/>
+              <div class="text-card-mp-p">
+                <h3>Blackpink</h3>
+                <h6>1M Subscriber</h6>
+              </div>
+            </div>
+            <div class="card-mp-p">
+              <img src="images/main/Name=Taylor Swift.png" alt="" class="image-mp-p"/>
+              <div class="text-card-mp-p">
+                <h3>Taylor Swift</h3>
+                <h6>1M Subscriber</h6>
+              </div>
+            </div>
+            <div class="card-mp-p">
+              <img src="images/main/Name=Jisoo.png" alt="" class="image-mp-p"/>
+              <div class="text-card-mp-p">
+                <h3>Jisoo</h3>
+                <h6>1M Subscriber</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end main web-->
+
+      <!-- footer -->
+      <div class="panel-container">
+        <div class="p-song">
+          <div class="card-sidebar">
+            <img src="images/footer/Name=Nadin_Amizah_-_Selamat_Ulang_Tahun.png" alt="" class="cover-sidebar-song"/>
+            <div class="artist-sidebar">
+              <h4>Selamat Ulang Tahun</h4>
+              <h6>Nadin Amizah</h6>
+            </div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="song-bar">
+            <div class="controls">
+              <button class="control-btn" id="shuffle-btn">
+                <img src="/images/footer/suffle.svg" alt="" />
+              </button>
+              <button class="control-btn" id="prev-btn">
+                <img src="/images/footer/previous.svg" alt="" />
+              </button>
+              <button class="control-btn play-pause">
+                <img src="/images/footer/play.svg" alt="Play Icon"/>
+              </button>
+              <button class="control-btn" id="next-btn">
+                <img src="/images/footer/next.svg" alt="" />
+              </button>
+              <button class="control-btn" id="repeat-btn">
+                <img src="/images/footer/repeat.svg" alt="" />
+              </button>
+            </div>
+            <div class="progress-bar">
+              <span class="current-time">1.21</span>
+              <div class="progress">
+                <div class="progress-filled"></div>
+              </div>
+              <span class="total-time">6.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="audio">
+          <div class="volume-control">
+            <button class="icon">
+              <img src="images/footer/mic.svg" alt="" />
+            </button>
+            <button class="icon">
+              <img src="images/footer/volume.svg" alt="" />
+            </button>
+            <div class="slider">
+              <input type="range" min="0" max="100" value="70" class="slider-input"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
